@@ -1,0 +1,61 @@
+function bakaliq([arg1, arg2, arg3]) {
+
+    let product = arg1.toLowerCase()
+    let town = arg2.toLowerCase()
+    let qty = Number(arg3)
+
+    if (town == 'Varna') {
+        if (product == 'coffee') {
+            console.log(qty * 0.45).toFixed(2)
+
+        } else if ('water') {
+            console.log(qty * 0.70).toFixed(2)
+
+        } else if ('beer') {
+            console.log(qty * 1.10).toFixed(2)
+
+        } else if ('sweets') {
+            console.log(qty * 1.35).toFixed(2)
+
+        } else if ('peanuts') {
+            console.log(qty * 1.55).toFixed(2)
+        }
+
+    } else if (town == 'Sofia') {
+        if (product == 'coffee') {
+            console.log(qty * 0.50).toFixed(2)
+
+        } else if ('water') {
+            console.log(qty * 0.80).toFixed(2)
+
+        } else if ('beer') {
+            console.log(qty * 1.20).toFixed(2)
+
+        } else if (product == 'sweets') {
+            console.log(qty * 1.45).toFixed(2)
+
+        } else if (product == 'peanuts') {
+            console.log(qty * 1.60).toFixed(2)
+
+        }
+
+    } else if (town == 'Plovdiv') {
+        if (product == 'coffee') {
+            console.log(qty * 0.40).toFixed(2)
+
+        } else if ('water') {
+            console.log(qty * 0.70).toFixed(2)
+
+        } else if ('beer') {
+            console.log(qty * 1.15).toFixed(2)
+
+        } else if ('sweets') {
+            console.log(qty * 1.30).toFixed(2)
+
+        } else if (product == 'peanuts') {
+            console.log(qty * 1.50).toFixed(2)
+        }
+    }
+}
+
+bakaliq(['coffee', 'Varna', 2])
