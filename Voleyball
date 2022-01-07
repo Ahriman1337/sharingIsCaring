@@ -1,0 +1,20 @@
+function vladi([arg1, arg2, arg3]) {
+    let year = arg1.toLowerCase() ;
+    let holidays = arg2 ;
+    let travel = arg3 ;
+
+    let sofiaWeekends = 48 - travel ;
+    let freeWeekends = (sofiaWeekends  * 0.75) ;
+    let gamesSofia = (holidays * (2 / 3)) ;
+    let totalGames = freeWeekends + gamesSofia + travel ;
+
+        if (year === 'normal') {
+            console.log(Math.floor(totalGames));
+        } else if (year === 'leap') {
+            totalGames = Math.floor(totalGames + (totalGames / 100) * 15) ;
+            console.log(totalGames) ;
+        
+    }
+}
+
+vladi(['normal', 3, 2]) ;
